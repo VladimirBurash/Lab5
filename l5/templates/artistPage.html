@@ -1,0 +1,9 @@
+{% extends 'testPage.html' %}
+
+{% block title %} Книга {% endblock %}
+
+{% block body %}
+<div>Название группы:{{ name }}</div>
+<div>Участники:{{ author }}</div>
+        <a class = "btn btn-default"href="{% url 'artists_url' %}">Назад</a>
+{% endblock %}

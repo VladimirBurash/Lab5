@@ -1,0 +1,11 @@
+{% extends 'testPage.html' %}
+
+{% block title %} Список книг {% endblock %}
+
+{% block body %}
+    <table class="table-responsive" width = 1000dp height = 100dp >
+        {% for artist in artists %}
+            {% include "elementOfList.html" with elem=artist %}
+        {% endfor %}
+    </table>
+{% endblock %}
